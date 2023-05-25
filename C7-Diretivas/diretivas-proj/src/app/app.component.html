@@ -1,0 +1,12 @@
+<app-comp-atributos>
+  <h2>Bom dia!</h2>
+  <p>vim de fora</p>
+</app-comp-atributos>
+<app-card *ngIf="isAliveCard; else anotherBlock"></app-card>
+<ng-template #anotherBlock>
+  Olá, houve um mal carregamento do componente.
+</ng-template>
+<router-outlet></router-outlet>
+
+<app-input></app-input>
+<app-list-view></app-list-view>
